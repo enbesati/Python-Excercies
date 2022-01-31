@@ -1,0 +1,12 @@
+import difflib
+import random
+
+string1 = random.randint(1, 5)
+string2 = random.randint(1, 5)
+d = difflib.Differ()
+
+diff = d.compare([string1], [string2])
+
+print('\n'.join(diff))
+
+
