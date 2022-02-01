@@ -1,0 +1,10 @@
+import numpy as np
+
+arr = np.array([3, 4, 6, 2, 1, 9, 0, 7, 5, 8])
+print("input array is: ", arr)
+arr2 = [1]
+for count, value in enumerate(arr):
+    arr2.append(value*arr2[count])
+
+print("result array: ", arr2[1:])
+
