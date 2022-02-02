@@ -1,0 +1,16 @@
+import numpy as np
+
+arr = np.array([3, 4, 6, 2, 1, 9, 0, 7, 5, 8])
+print("input array is: ", arr)
+arr2 = [1]
+maximum_value=[arr[0]]
+
+for count, value in enumerate(arr):
+   if maximum_value[count]<value:
+       maximum_value.append(value)
+   else:
+       maximum_value.append(maximum_value[count])
+
+
+print("result array: ", maximum_value[1:])
+
