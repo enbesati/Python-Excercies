@@ -1,0 +1,13 @@
+def FibonacciGenerator():
+
+   a,b= 1,1
+   while True:
+        yield a
+        a,b= b, a+b
+
+generator = FibonacciGenerator()
+for i in range(10):
+    print(next(generator))
+
+
+
