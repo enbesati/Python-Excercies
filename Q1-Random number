@@ -1,0 +1,9 @@
+import random
+mylist=[]
+max=0
+for i in range(0,100):
+    mylist.append(random.random())
+    if mylist[i]>max:
+        max=mylist[i]
+print(mylist)
+print(max)
