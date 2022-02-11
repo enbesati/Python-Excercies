@@ -1,5 +1,4 @@
-print("please enter number: ")
-n = int(input())
+n = int(input("please enter the number: "))
 for i in range(n):
     print(' '*n, end='')
     print('* '*(i))
