@@ -1,0 +1,19 @@
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+print("input array is: ", arr)
+sum_value=[arr[0]]
+value2 =[100]
+
+for count, value in enumerate(arr):
+    sum_value.append(value)
+    sum_value[count]+= sum_value[count+1]
+
+print("result array: ", sum_value[1:])
+
+
+for count, value in enumerate(arr):
+        value2.append(value)
+        value2[count+1]= value2[count+1]+100
+
+print("result array: ", value2)
